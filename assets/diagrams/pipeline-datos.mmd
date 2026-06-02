@@ -1,0 +1,9 @@
+%%{init: {'theme': 'base'}}%%
+flowchart LR
+    RAW["Datos crudos\n(raw)"]
+    CLEAN["Limpieza\n& validación"]
+    TRANSFORM["Transformación\n& feature eng."]
+    SPLIT["Train / Val / Test\nsplit"]
+    MODEL["Modelo"]
+
+    RAW --> CLEAN --> TRANSFORM --> SPLIT --> MODEL

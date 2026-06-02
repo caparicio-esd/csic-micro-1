@@ -1,0 +1,13 @@
+%%{init: {'theme': 'base'}}%%
+flowchart LR
+    P["Comprensión\ndel problema"]
+    D["Comprensión\nde datos"]
+    PR["Preparación\nde datos"]
+    M["Modelado"]
+    E["Evaluación"]
+    DE["Despliegue"]
+    MO["Monitorización"]
+
+    P --> D --> PR --> M --> E --> DE --> MO
+    MO -.->|"iterar"| P
+    E -.->|"revisar"| PR

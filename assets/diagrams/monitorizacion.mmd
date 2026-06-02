@@ -1,0 +1,8 @@
+%%{init: {'theme': 'base'}}%%
+flowchart LR
+    API["API / Endpoint"]
+    LOG["Logger"]
+    METRICS["Métricas\n(latencia, drift)"]
+    ALERT["Alarma /\nReentrenamiento"]
+
+    API --> LOG --> METRICS --> ALERT

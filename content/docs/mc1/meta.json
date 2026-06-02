@@ -1,0 +1,13 @@
+{
+  "title": "MC1 — Fundamentos de IA",
+  "pages": [
+    "index",
+    "01-que-es-ia",
+    "02-datos",
+    "03-como-aprenden",
+    "04-deep-learning",
+    "05-proyecto-ia",
+    "06-prototipo-sistema",
+    "capstone"
+  ]
+}

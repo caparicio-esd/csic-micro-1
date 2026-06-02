@@ -1,0 +1,10 @@
+%%{init: {'theme': 'base'}}%%
+flowchart TB
+    INPUT["Tokens de entrada"]
+    EMB["Embedding\n+ Positional Encoding"]
+    ATT["Multi-Head\nAttention"]
+    FF["Feed-Forward"]
+    OUT["Salida"]
+
+    INPUT --> EMB --> ATT --> FF --> OUT
+    ATT -.->|"Q, K, V"| ATT

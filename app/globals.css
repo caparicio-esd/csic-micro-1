@@ -1,0 +1,177 @@
+/* ─── Color tokens: indigo-slate palette ─────────────────────────── */
+:root {
+  --color-fd-background:          hsl(218, 28%, 97%);
+  --color-fd-foreground:          hsl(222, 47%, 11%);
+
+  --color-fd-card:                hsl(218, 20%, 95%);
+  --color-fd-card-foreground:     hsl(222, 47%, 11%);
+  --color-fd-popover:             hsl(0, 0%, 100%);
+  --color-fd-popover-foreground:  hsl(222, 30%, 14%);
+
+  --color-fd-muted:               hsl(218, 20%, 93%);
+  --color-fd-muted-foreground:    hsl(218, 12%, 44%);
+
+  --color-fd-border:              hsla(218, 25%, 58%, 28%);
+
+  /* primary = deep indigo */
+  --color-fd-primary:             hsl(243, 68%, 52%);
+  --color-fd-primary-foreground:  hsl(0, 0%, 100%);
+
+  --color-fd-secondary:           hsl(218, 20%, 91%);
+  --color-fd-secondary-foreground:hsl(222, 47%, 11%);
+
+  /* accent = soft indigo wash */
+  --color-fd-accent:              hsla(243, 68%, 52%, 9%);
+  --color-fd-accent-foreground:   hsl(243, 68%, 44%);
+
+  --color-fd-ring:                hsl(243, 68%, 52%);
+}
+
+.dark {
+  --color-fd-background:          hsl(222, 44%, 8%);
+  --color-fd-foreground:          hsl(213, 31%, 93%);
+
+  --color-fd-card:                hsl(222, 38%, 11%);
+  --color-fd-card-foreground:     hsl(213, 31%, 96%);
+  --color-fd-popover:             hsl(222, 38%, 10%);
+  --color-fd-popover-foreground:  hsl(213, 25%, 88%);
+
+  --color-fd-muted:               hsl(222, 28%, 14%);
+  --color-fd-muted-foreground:    hsla(215, 20%, 68%, 85%);
+
+  --color-fd-border:              hsla(215, 25%, 55%, 16%);
+
+  --color-fd-primary:             hsl(243, 78%, 68%);
+  --color-fd-primary-foreground:  hsl(222, 44%, 8%);
+
+  --color-fd-secondary:           hsl(222, 28%, 16%);
+  --color-fd-secondary-foreground:hsl(213, 25%, 88%);
+
+  --color-fd-accent:              hsla(243, 68%, 60%, 18%);
+  --color-fd-accent-foreground:   hsl(243, 78%, 76%);
+
+  --color-fd-ring:                hsl(243, 68%, 65%);
+}
+
+.dark #nd-sidebar {
+  --color-fd-muted:     hsl(222, 30%, 17%);
+  --color-fd-secondary: hsl(222, 30%, 19%);
+}
+
+/* ─── Typography ──────────────────────────────────────────────────── */
+
+/* Heading hierarchy in prose */
+.prose h1 {
+  font-size: 2.1rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.15 !important;
+  margin-bottom: 1rem !important;
+}
+
+.prose h2 {
+  font-size: 1.45rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.25 !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 0.75rem !important;
+  padding-bottom: 0.4rem !important;
+  border-bottom: 1px solid var(--color-fd-border) !important;
+}
+
+.prose h3 {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1.4 !important;
+  margin-top: 1.75rem !important;
+  color: var(--color-fd-foreground) !important;
+}
+
+.prose h4 {
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+  color: var(--color-fd-muted-foreground) !important;
+}
+
+/* Body text */
+.prose p,
+.prose li {
+  font-size: 0.96rem !important;
+  line-height: 1.8 !important;
+  color: color-mix(in oklab, var(--color-fd-foreground) 88%, transparent) !important;
+}
+
+/* Inline code: indigo pill */
+.prose :not(pre) > code {
+  font-size: 0.82em !important;
+  padding: 0.15em 0.45em !important;
+  border-radius: 0.3em !important;
+  background: var(--color-fd-accent) !important;
+  color: var(--color-fd-accent-foreground) !important;
+  font-weight: 500 !important;
+  border: 1px solid color-mix(in oklab, var(--color-fd-primary) 18%, transparent) !important;
+}
+
+/* Links */
+.prose a {
+  color: var(--color-fd-primary) !important;
+  text-decoration: underline !important;
+  text-decoration-color: color-mix(in oklab, var(--color-fd-primary) 35%, transparent) !important;
+  text-underline-offset: 3px !important;
+  font-weight: 500 !important;
+  transition: text-decoration-color 150ms ease !important;
+}
+.prose a:hover {
+  text-decoration-color: var(--color-fd-primary) !important;
+}
+
+/* Blockquote */
+.prose blockquote {
+  border-inline-start-color: var(--color-fd-primary) !important;
+  background: var(--color-fd-accent) !important;
+  border-radius: 0 0.4rem 0.4rem 0 !important;
+  padding: 0.75rem 1.25rem !important;
+  font-style: normal !important;
+}
+
+/* Table */
+.prose table {
+  font-size: 0.88rem !important;
+}
+.prose thead th {
+  background: var(--color-fd-muted) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.03em !important;
+  font-size: 0.78rem !important;
+  text-transform: uppercase !important;
+  color: var(--color-fd-muted-foreground) !important;
+}
+
+/* ─── Global shell ────────────────────────────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Thin scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: color-mix(in oklab, var(--color-fd-primary) 35%, transparent);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in oklab, var(--color-fd-primary) 60%, transparent);
+}
+
+/* Selection */
+::selection {
+  background: color-mix(in oklab, var(--color-fd-primary) 20%, transparent);
+  color: var(--color-fd-foreground);
+}
